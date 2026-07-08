@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swrl Tools - Simple, Free Tools Built to Be Useful</title>
+<meta name="description" content="Swrl Tools is a collection of simple, free calculators and tools — plus handmade goods from SwrlByLiz.">
+<style>
+  :root {
+    --bg: #f7f8f6;
+    --card: #ffffff;
+    --text: #232a33;
+    --muted: #6b7480;
+    --accent: #2c6e63;
+    --accent-dark: #1f5049;
+    --border: #e3e6e1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 20px 60px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .brand svg { flex-shrink: 0; }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    color: var(--muted);
+    margin-top: 6px;
+    margin-bottom: 40px;
+    font-size: 1.02rem;
+  }
+  h2 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 36px 0 14px;
+    font-weight: 600;
+  }
+  .card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  }
+  .card .name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--accent-dark);
+    margin-bottom: 4px;
+  }
+  .card .desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .card.shop .name { color: #8a4a6b; }
+  .card.shop:hover { border-color: #8a4a6b; }
+  footer {
+    text-align: center;
+    margin-top: 56px;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M22 6 C31 6 38 13 38 22 C38 29.5 32 35 25.5 35 C20 35 15.5 30.8 15.5 25.5 C15.5 21 19 17.5 23.2 17.5 C26.6 17.5 29.2 20.1 29.2 23.3 C29.2 25.8 27.2 27.8 24.8 27.8"
+        stroke="#2c6e63" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+    </svg>
+    <h1>Swrl Tools</h1>
+  </div>
+  <p class="tagline">Simple, free tools built to be useful.</p>
+
+  <h2>Tools</h2>
+
+  <a class="card" href="https://sourdoughfermentationcalculator.com">
+    <div class="name">Sourdough Fermentation Calculator</div>
+    <div class="desc">Estimate bulk fermentation and proof times from your dough temperature, room temperature, hydration, and starter amount.</div>
+  </a>
+
+  <h2>Shop</h2>
+
+  <a class="card shop" href="https://www.etsy.com/shop/SwrlByLiz">
+    <div class="name">SwrlByLiz on Etsy</div>
+    <div class="desc">Handmade goods, made with care.</div>
+  </a>
+
+  <footer>
+    <p>Contact: <a href="mailto:hello@swrltools.com">hello@swrltools.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
