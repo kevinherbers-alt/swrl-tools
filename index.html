@@ -55,9 +55,11 @@
     font-weight: 600;
   }
   .card {
+    --card-accent: var(--accent);
     display: block;
     background: var(--card);
     border: 1px solid var(--border);
+    border-left: 4px solid var(--card-accent);
     border-radius: 12px;
     padding: 20px 22px;
     margin-bottom: 12px;
@@ -67,21 +69,26 @@
     transition: border-color 0.15s ease, box-shadow 0.15s ease;
   }
   .card:hover {
-    border-color: var(--accent);
+    border-color: var(--card-accent);
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   }
   .card .name {
     font-weight: 700;
     font-size: 1.05rem;
-    color: var(--accent-dark);
+    color: var(--card-accent);
     margin-bottom: 4px;
   }
   .card .desc {
     color: var(--muted);
     font-size: 0.92rem;
   }
-  .card.shop .name { color: #8a4a6b; }
-  .card.shop:hover { border-color: #8a4a6b; }
+  .card.sourdough { --card-accent: #b5651d; }
+  .card.golf      { --card-accent: #3a7d44; }
+  .card.plant     { --card-accent: #5c7a3d; }
+  .card.debt      { --card-accent: #2f5fd0; }
+  .card.retire    { --card-accent: #9a6b0f; }
+  .card.balloon   { --card-accent: #b53e63; }
+  .card.shop      { --card-accent: #8a4a6b; }
   footer {
     text-align: center;
     margin-top: 56px;
@@ -105,36 +112,36 @@
 
   <h2>Tools</h2>
 
-  <a class="card" href="https://sourdoughfermentationcalculator.com">
+  <a class="card sourdough" href="https://sourdoughfermentationcalculator.com">
     <div class="name">Sourdough Fermentation Calculators</div>
     <div class="desc">Estimate bulk fermentation and proof times from your dough temperature, room temperature, hydration, and starter amount.</div>
   </a>
-  
-  <a class="card" href="https://golfhandicapestimator.com">
+
+  <a class="card golf" href="https://golfhandicapestimator.com">
     <div class="name">Golf Handicap Calculators</div>
     <div class="desc">Golf handicap tools — estimate your handicap as a beginner, calculate your official WHS index, and convert it for any course.</div>
   </a>
-  
-    <a class="card" href="https://whentoplantcalculator.com">
-    <div class="name">Seed Planting Calculators</div>
-    <div class="desc">Garden timing tools — when to start seeds, when your sprouts will mature, and fall planting dates from your frost date.</div>
-  </a>
-  
-    <a class="card" href="https://smartdebtcalculators.com">
+
+  <a class="card debt" href="https://smartdebtcalculators.com">
     <div class="name">Debt Payoff Calculators</div>
     <div class="desc">Debt payoff tools — snowball vs. avalanche, payoff dates, and whether to pay off debt or invest.</div>
   </a>
-  
-    <a class="card" href="https://simpleretirementcalculators.com">
+
+  <a class="card retire" href="https://simpleretirementcalculators.com">
     <div class="name">Retirement Saving Calculators</div>
     <div class="desc">Retirement planning tools — your retirement number, when you can retire, and how long your savings will last.</div>
   </a>
 
-      <a class="card" href="https://ballooncoveragecalculator.com">
+    <a class="card plant" href="https://whentoplantcalculator.com">
+    <div class="name">Seed Planting Calculators</div>
+    <div class="desc">Garden timing tools — when to start seeds, when your sprouts will mature, and fall planting dates from your frost date.</div>
+  </a>
+
+  <a class="card balloon" href="https://ballooncoveragecalculator.com">
     <div class="name">Balloon Coverage Calculators</div>
     <div class="desc">Balloon decorating tools — how many balloons you need for any garland, arch, or shape, plus pricing and helium calculators.</div>
   </a>
-  
+
   <h2>Shop</h2>
 
   <a class="card shop" href="https://www.etsy.com/shop/SwrlByLiz">
@@ -149,3 +156,4 @@
 </div>
 </body>
 </html>
+
